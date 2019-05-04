@@ -1,0 +1,19 @@
+<form #form="ngForm" autocomplete="off">
+  <div class="form-row mt-5" *ngIf="question">
+    <div class="col-md-12">
+      <label class="h4">Question {{questionIndex + 1}}: {{question.Name}}</label>
+    </div>
+  </div>
+  <div class="form-row mt-5" *ngIf="question">
+    <div class="col-md-12 offset-md-2">      
+      <div class="form-group" *ngIf="question && question.Choices.length > 0">
+        <ng-container *ngFor="let choice of question.Choices; let i = index">
+          <label class="radio-inline col-md-4">
+            <input type="radio" name="ChoiceId" #ChoiceId="ngModel" value="{{choice.ChoiceId}}" [(ngModel)]="questionService.formData.ChoiceId">
+            {{choice.Name}}
+          </label>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</form>

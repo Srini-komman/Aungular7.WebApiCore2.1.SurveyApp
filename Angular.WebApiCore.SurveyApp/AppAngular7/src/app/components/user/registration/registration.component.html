@@ -1,0 +1,16 @@
+<div class="row mt-4">
+  <div class="col-md-12">
+    <form [formGroup]="userService.formModel" autocomplete="off" (submit)="onSubmit()">
+      <div class="form-group col-md-6 col-sm-6 offset-md-3 text-center required">
+        <label>Nickname</label>
+        <input class="form-control" formControlName="NickName">
+        <label class="text-danger" *ngIf="userService.formModel.get('NickName').touched && userService.formModel.get('NickName').errors?.required">Nickname is mandatory.</label>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-4 col-sm-2 offset-md-4">
+          <button type="submit" class="btn btn-lg btn-block" [disabled]="!userService.formModel.valid">Start</button>
+        </div>
+      </div>
+    </form>
+  </div>  
+</div>
