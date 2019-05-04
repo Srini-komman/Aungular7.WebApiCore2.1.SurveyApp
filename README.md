@@ -20,7 +20,7 @@ This project was generated with following technologies and patterns
 
 
 ## Development server
-<li>Open Command prompt</li>
+<li>Please open Command prompt</li>
 <li>Navigate to >> root folder (Aungular7.WebApiCore2.1.SurveyApp)>>AppAngular7</li>
 <li>Run `npm Install</li>
 <li>Run ng build</li>
@@ -32,7 +32,7 @@ This project was generated with following technologies and patterns
 <li>This will render Angular App and navigate dafulat router customer registration view</li>
 
 ### Changing Port number:
-<li>Select the project(Aungular7.WebApiCore2.1.SurveyApp) from solution explorer</li>
+<li>Please select the project(Aungular7.WebApiCore2.1.SurveyApp) from solution explorer</li>
 <li>Right click on the project</li>
 <li>Select Properties</li>
 <li>Navigate to Debug menu from left side panel</li>
